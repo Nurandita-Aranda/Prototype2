@@ -18,11 +18,11 @@ with tab_2:
         if tombol_1:
             nilai_molaritas1 = Mol/Volume
             st.success(f"nilai molaritas adalah {nilai_molaritas1}")
-    if option == "Diketahui massa, Mr, & volume":
+    if option =="Diketahui massa, Mr, & volume":
         Massa = st.number_input("Masukkan nilai massa terlarut (gram)")
         Mr = st.number_input("Masukkan nilai Mr terlarut (gram/mol)")
         volume = st.number_input("Masukkan jumlah volume larutan (mL)")
-        tombol_2 = st.button("Hitung")
+        tombol_2 = st.button("Yuk Hitung")
         if tombol_2:
             nilai_molaritas2 = Massa*1000/(Mr*volume)
             st.success(f"nilai molaritas adalah {nilai_molaritas2}")
